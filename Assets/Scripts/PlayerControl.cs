@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour {
 
     bool isGrounded;
 
-    void Start()
+    void Start()    
     {
         rb = GetComponent<Rigidbody>();
     }
@@ -20,17 +20,31 @@ public class PlayerControl : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
 
         rb.AddForce (movement * speed);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) ;
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded);
         {
-            Vector3 jump = new Vector3(0.0f, 10f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 5f, 0.0f);
             rb.AddForce(jump);
 
         }
     }
 
-   
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"));
+        {
+            isGrounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"));
+        {
+            isGrounded = false;
+        }
+    }
 }
