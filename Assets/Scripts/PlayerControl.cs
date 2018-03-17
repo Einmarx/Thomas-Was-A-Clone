@@ -26,7 +26,7 @@ public class PlayerControl : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded);
         {
-            Vector3 jump = new Vector3(0.0f, 5f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 6f, 0.0f);
             rb.AddForce(jump);
 
         }
