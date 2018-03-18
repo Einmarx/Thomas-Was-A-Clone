@@ -20,13 +20,13 @@ public class PlayerControl : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0.0f);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce (movement * speed);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded);
         {
-            Vector3 jump = new Vector3(0.0f, 6f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 10f, 0.0f);
             rb.AddForce(jump);
 
         }
@@ -40,7 +40,7 @@ public class PlayerControl : MonoBehaviour {
         }
     }
 
-    void OnCollisionExit(Collision collision)
+    void OnCollisionExit (Collision collision)
     {
         if (collision.gameObject.CompareTag("Floor"));
         {
