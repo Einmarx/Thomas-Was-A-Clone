@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -8471,7 +8471,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 869048200abf5d54b94784c429ee48bc, type: 2}
+      objectReference: {fileID: 2100000, guid: a5991918f838fdd48a91e28b49e6102d, type: 2}
     - target: {fileID: 198206148617154192, guid: 87b60303eaa28d342b6eefb7f23a1eeb,
         type: 2}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
@@ -8550,6 +8550,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 199284251924337288, guid: 87b60303eaa28d342b6eefb7f23a1eeb,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5991918f838fdd48a91e28b49e6102d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87b60303eaa28d342b6eefb7f23a1eeb, type: 2}
   m_IsPrefabParent: 0
@@ -8780,7 +8785,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 790061303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.58592606, y: -0.56199145, z: -13.09488}
+  m_LocalPosition: {x: 0.58592606, y: -0.56199145, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 688752826}
@@ -9109,7 +9114,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 948168568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.83, y: -6.13, z: 0}
+  m_LocalPosition: {x: 21.37, y: -6.13, z: 0}
   m_LocalScale: {x: 20.996979, y: 8.854229, z: 1}
   m_Children: []
   m_Father: {fileID: 308036458}
@@ -9129,7 +9134,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dcb0ec3460b1f49499b75750382bf1a2, type: 2}
+  - {fileID: 2100000, guid: c09216299ea6529419ed3181d28465f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
