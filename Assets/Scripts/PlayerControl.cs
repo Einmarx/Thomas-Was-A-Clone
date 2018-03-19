@@ -26,7 +26,7 @@ public class PlayerControl : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            Vector3 jump = new Vector3(0.0f, 750f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 475f, 0.0f);
             rb.AddForce(jump);
 
         }
@@ -34,7 +34,7 @@ public class PlayerControl : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Floor"));
+        if (collision.gameObject.CompareTag("Floor"))
         {
             isGrounded = true;
         }
@@ -42,7 +42,7 @@ public class PlayerControl : MonoBehaviour {
 
     void OnCollisionExit (Collision collision)
     {
-        if (collision.gameObject.CompareTag("Floor"));
+        if (collision.gameObject.CompareTag("Floor"))
         {
             isGrounded = false;
         }
