@@ -4635,7 +4635,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -607940640
+  randomSeed: 1876923915
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5079,7 +5079,7 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 0
+    angle: 11.580047
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -5100,7 +5100,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 18.074907
+      value: 17.740593
       mode: 0
       spread: 0
       speed:
@@ -7943,7 +7943,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538066504}
   m_LocalRotation: {x: 0.00009603386, y: 0.7071068, z: -0.7071068, w: -0.00009603386}
-  m_LocalPosition: {x: 57.19, y: 5.37, z: -12.552045}
+  m_LocalPosition: {x: 59, y: 5.4, z: -12.552045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1771998346}
@@ -9102,7 +9102,7 @@ GameObject:
   - component: {fileID: 948168570}
   m_Layer: 0
   m_Name: Outdoor floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
